@@ -2,13 +2,12 @@
 
 Console games and small management exercises in C, including number guessing, tic-tac-toe, and rock-paper-scissors.
 
-## Repository guide
+## Setup and repository reference
 
-### Contents
+### Project structure
 
 - [Guess_number.c](Guess_number.c)
 - [Main_Menu_Project.c](Main_Menu_Project.c)
-- [README.md](README.md)
 - [Rock_Paper_Scissor.c](Rock_Paper_Scissor.c)
 - [Tic_Tac_Toe.c](Tic_Tac_Toe.c)
 - [cyber_management.c](cyber_management.c)
@@ -29,9 +28,15 @@ gcc "cyber_management.c" -o exercise
 
 ### Configuration and limitations
 
+Build each game or console exercise separately with GCC. Programs use terminal input; there is no shared application launcher.
+
 ### Validation
 
-Reviewed on 2026-10-08. Every tracked C source file passed GCC syntax checks. Interactive workflows were not exhaustively exercised.
+Audit: 2026-10-08. Repository structure, setup instructions and description were reviewed. 5 C/C++ files passed compiler syntax checks. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
+
+### Repository description
+
+The short GitHub description is provided in [REPOSITORY_DESCRIPTION.md](REPOSITORY_DESCRIPTION.md).
 
 ### Contributions
 
