@@ -1,43 +1,55 @@
-# C-Projects
+# C Console Projects
 
 Console games and small management exercises in C, including number guessing, tic-tac-toe, and rock-paper-scissors.
 
-## Setup and repository reference
+## Project focus
 
-### Project structure
+C/C++ exercises. Use the directory map to choose a focused example or learning topic instead of treating the repository as one application.
 
-- [Guess_number.c](Guess_number.c)
-- [Main_Menu_Project.c](Main_Menu_Project.c)
-- [Rock_Paper_Scissor.c](Rock_Paper_Scissor.c)
-- [Tic_Tac_Toe.c](Tic_Tac_Toe.c)
-- [cyber_management.c](cyber_management.c)
+## Workflow
 
-### Getting started
+```mermaid
+flowchart TD
+    A["Select a chapter or exercise"] --> B["Read the associated source or notes"]
+    B --> C["Run one example or notebook"]
+    C --> D{"Expected outcome?"}
+    D -->|Yes| E["Record findings and continue"]
+    D -->|No| F["Review assumptions and inputs"]
+    F --> B
+```
+
+## Repository structure
+
+| Path | Purpose |
+| --- | --- |
+| [`Guess_number.c`](Guess_number.c) | Standalone programming exercise or example. |
+| [`Main_Menu_Project.c`](Main_Menu_Project.c) | Standalone programming exercise or example. |
+| [`Rock_Paper_Scissor.c`](Rock_Paper_Scissor.c) | Standalone programming exercise or example. |
+| [`Tic_Tac_Toe.c`](Tic_Tac_Toe.c) | Standalone programming exercise or example. |
+| [`cyber_management.c`](cyber_management.c) | Standalone programming exercise or example. |
+
+## Getting started
 
 ```bash
 git clone https://github.com/Raimal-Raja/C-Projects.git
 cd C-Projects
 ```
 
-Compile individual exercises rather than combining every file into one executable. Many exercises define their own main function.
+Use a compatible C/C++ compiler. Build each source file separately because many exercises define their own entry point.
 
 ```bash
-gcc "cyber_management.c" -o exercise
+gcc -std=c11 -Wall -Wextra Guess_number.c -o exercise
 ./exercise
 ```
 
-### Configuration and limitations
+## Verification
 
-Build each game or console exercise separately with GCC. Programs use terminal input; there is no shared application launcher.
+Compile or run one exercise at a time, test ordinary and boundary inputs, and compare the output with its stated problem. A successful build is not proof of algorithmic correctness.
 
-### Validation
+## Contributing
 
-Recorded checks from the previous maintenance review (2026-10-08): 5 C/C++ files passed compiler syntax checks. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
+Include reproduction steps, the affected path, expected behavior, and the checks you ran. Keep credentials, generated environments, and unnecessary build artifacts out of commits.
 
-### Contributions
+## License
 
-Describe the issue, reproduction steps, environment, and expected behavior when proposing a change. Keep generated environments, credentials, and unnecessary build artifacts out of new commits.
-
-### License
-
-No top-level license file was found during this review.
+No top-level license file is currently tracked. Check reuse permissions with the repository owner.
